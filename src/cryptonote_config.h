@@ -153,12 +153,14 @@ namespace config
   uint64_t const CRYPTONOTE_PUBLIC_ADDRESS_BASE58_PREFIX = 0xe3d9f55;  // 18;   // Address start from ckbzz  0xe3d9f55
   uint64_t const CRYPTONOTE_PUBLIC_INTEGRATED_ADDRESS_BASE58_PREFIX = 19;
   uint64_t const CRYPTONOTE_PUBLIC_SUBADDRESS_BASE58_PREFIX = 42;
-  uint16_t const P2P_DEFAULT_PORT = 18080;
-  uint16_t const RPC_DEFAULT_PORT = 18081;
-  uint16_t const ZMQ_RPC_DEFAULT_PORT = 18082;
+  uint16_t const P2P_DEFAULT_PORT =  29080;  //18080;
+  uint16_t const RPC_DEFAULT_PORT = 29081;  // 18081;
+  uint16_t const ZMQ_RPC_DEFAULT_PORT = 29082; // 18082;
   boost::uuids::uuid const NETWORK_ID = { {
-      0x12 ,0x30, 0xF1, 0x71 , 0x61, 0x04 , 0x41, 0x61, 0x17, 0x31, 0x00, 0x82, 0x16, 0xA1, 0xA1, 0x10
+//      0x12 ,0x30, 0xF1, 0x71 , 0x61, 0x04 , 0x41, 0x61, 0x17, 0x31, 0x00, 0x82, 0x16, 0xA1, 0xA1, 0x10
+        0x53, 0x37, 0x47, 0x81,  0x34, 0x4c,  0x4f, 0x4e, 0x45, 0x57, 0x00, 0x18, 0x13, 0x15, 0x01, 0x10
     } }; // Bender's nightmare
+//    const static boost::uuids::uuid CRYPTONOTE_NETWORK = { { 0x53, 0x37, 0x47, 0x81, 0x34, 0x4c, 0x4f, 0x4e, 0x45, 0x57, 0x00, 0x18, 0x13, 0x15, 0x01, 0x10 } };
   std::string const GENESIS_TX = "013c01ff0001ffffffffffff03029b2e4c0281c0b02e7c53291a94d1d0cbff8883f8024f5142ee494ffbbd08807121017767aafcde9be00dcfd098715ebcf7f410daebc582fda69d24a28e9d0bc890d1";
   uint32_t const GENESIS_NONCE = 10000;
 
